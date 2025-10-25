@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Usha Sree Uttarkar — Portfolio</title>
+    <style>
+      :root {
+        --accent: #6a0dad;
+        --light: #f9f5ff;
+        --dark: #1a1a1a;
+        --muted: #666;
+        --radius: 16px;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(120deg, #ede9fe, #f3e8ff);
+        color: var(--dark);
+        line-height: 1.6;
+      }
+      nav {
+        background: var(--accent);
+        padding: 16px;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 18px;
+        font-size: 17px;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      nav a:hover {
+        color: #ffdf6c;
+      }
+      header {
+        text-align: center;
+        padding: 60px 20px 40px;
+      }
+      header img {
+        width: 160px;
+        height: 180px;
+        border-radius: 15%;
+        border: 4px solid var(--accent);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+      }
+      header h1 {
+        margin-top: 18px;
+        font-size: 36px;
+        color: var(--accent);
+      }
+      header p {
+        font-size: 18px;
+        color: var(--muted);
+      }
+      .container {
+        width: 90%;
+        max-width: 1000px;
+        margin: auto;
+      }
+      section {
+        background: white;
+        padding: 25px;
+        border-radius: var(--radius);
+        margin: 30px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      section:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+      }
+      h2 {
+        color: var(--accent);
+        border-left: 5px solid var(--accent);
+        padding-left: 10px;
+        font-size: 22px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        background: var(--light);
+        margin: 8px 0;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-size: 17px;
+      }
+      .pill {
+        display: inline-block;
+        background: #ede9fe;
+        color: var(--accent);
+        padding: 6px 12px;
+        border-radius: 20px;
+        margin: 4px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+      }
+      footer {
+        background: var(--accent);
+        color: white;
+        text-align: center;
+        padding: 16px;
+        font-size: 15px;
+        margin-top: 40px;
+      }
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <header>
+      <img src="profile.jpg" alt="Usha Sree" />
+      <h1>Uttarkar Usha Sree</h1>
+      <p>B.Tech — Computer Science | IIITDM Jabalpur</p>
+    </header>
+
+    <div class="container">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello! I’m Usha Sree, an aspiring software engineer passionate about full-stack web development and problem-solving. I enjoy building user-friendly interfaces, writing clean code, and working on projects that make an impact.</p>
+        <ul>
+          <li><b>Location:</b> Anantapur, India</li>
+          <li><b>DOB:</b> 24 February 2007</li>
+          <li><b>Languages:</b> English, Telugu, Hindi</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2>Education</h2>
+        <ul>
+          <li><b>Indian Institute of Information Technology, Design & Manufacturing, Jabalpur</b><br />B.Tech in Computer Science and Engineering (2024–2028)</li>
+          <li><b>Sri Chaitanya Junior College, Vijayawada</b><br />MPC (2022–2024)</li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div>
+            <h3>Technical</h3>
+            <div>
+              <span class="pill">C</span><span class="pill">C++</span><span class="pill">Python</span><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">React</span><span class="pill">Flask</span><span class="pill">SQL</span>
+            </div>
+          </div>
+          <div>
+            <h3>Soft Skills</h3>
+            <div>
+              <span class="pill">Communication</span><span class="pill">Leadership</span><span class="pill">Teamwork</span><span class="pill">Time Management</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><b>Calculator App:</b> A responsive calculator built using HTML, CSS, and JavaScript that supports advanced operations.</li>
+          <li><b>Tic Tac Toe:</b> Interactive game with automatic winner detection and game-state management.</li>
+          <li><b>Sports Inventory Website:</b> College project managing sports items and student requests using HTML, CSS, and MySQL.</li>
+        </ul>
+      </section>
+
+      <section id="achievements">
+        <h2>Achievements & Leadership</h2>
+        <ul>
+          <li>Top performer in <b>Newbie 1.0</b> competitive programming contest at IIITDM Jabalpur.</li>
+          <li>PR Team — <b>HackByte 3.0</b>: Increased event participation by 50% through outreach.</li>
+          <li>Head, Sponsorship Team — <b>Business Carnival</b>: Secured partnerships and managed finances.</li>
+          <li>Volunteer — <b>Jagriti</b>: Taught children basic education and digital literacy.</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+          <li><b>Email:</b> <a href="mailto:ushafeb24@gmail.com">ushafeb24@gmail.com</a></li>
+          <li><b>LinkedIn:</b> <a href="https://linkedin.com/in/usha-sree-uttarkar-1bba09333">linkedin.com/in/usha-sree-uttarkar-1bba09333</a></li>
+          <li><b>GitHub:</b> <a href="https://github.com/Usha2007-feb">github.com/Usha2007-feb</a></li>
+        </ul>
+      </section>
+    </div>
+
+    <footer>© 2025 Uttarkar Usha Sree | Built with ❤️ using HTML & CSS</footer>
+  </body>
+</html>
